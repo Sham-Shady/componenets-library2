@@ -1,9 +1,9 @@
 h1{
-color: red; 
+color: red;
 }
 
 
-button {
+.btn1 {
  padding: 22px 28px;
  color: #03e9f4;
  font-size: 13px;
@@ -15,7 +15,7 @@ button {
  border: 1px solid #03e9f4;
 }
 
-button:hover {
+.btn1:hover {
  background: #03e9f4;
  color: #050801;
  box-shadow: 0 0 5px #03e9f4,
@@ -23,4 +23,93 @@ button:hover {
               0 0 20px #03e9f4,
               0 0 20px #03e9f4;
  transform: rotate(360deg);
+}
+
+.btn2 {
+  width: 140px;
+ height: 45px;
+ font-size: 23px;
+ cursor: pointer;
+ border: none;
+ outline: none;
+ background: transparent;
+ color: green;
+ font-family: 'Times New Roman', Times, serif;
+ font-weight: 700;
+ position: relative;
+ transition: all 0.5s;
+ z-index: 1;
+}
+
+.btn2::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 5px;
+ height: 100%;
+ background-color: green;
+ z-index: -1;
+ transition: all 0.5s;
+}
+
+.btn2:hover::before {
+ width: 100%;
+}
+
+.btn2:hover {
+ color: red;
+}
+
+.btn2:active:before {
+ background: #b9b9b9;
+}
+
+.btn3 {
+ padding: 10px;
+ font-size: 15px;
+ outline: none;
+ border: 2px solid black;
+ background-color: white;
+ color: white;
+ position: relative;
+ letter-spacing: 1px;
+}
+
+.btn3::before {
+ content: 'Click Me';
+ /*Button's value/text-content */
+ position: absolute;
+ top: -14%;
+ left: 7%;
+ background-color: black;
+ width: 100%;
+ height: 100%;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transition: 0.15s ease-in-out;
+ font-weight: bold;
+}
+
+.btn3:hover::before {
+ top: 0;
+ left: 0;
+}
+
+.btn4 {
+ width: 120px;
+ height: 50px;
+ font-size: 18px;
+ border: 1px solid rgba(0, 0, 0, 0.0);
+ border-radius: 12.5px;
+ background: #e0e0e0;
+ box-shadow: 16px 16px 18px #aaaaaa,
+             -16px -16px 18px #ffffff;
+}
+
+.btn4:active {
+ box-shadow: 16px 16px 18px #aaaaaa inset,
+             -16px -16px 18px #ffffff inset;
 }
