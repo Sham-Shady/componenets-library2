@@ -1,0 +1,26 @@
+h1{
+
+}
+
+
+button {
+ padding: 22px 28px;
+ color: #03e9f4;
+ font-size: 13px;
+ text-decoration: none;
+ text-transform: uppercase;
+ transition: 0.5s;
+ letter-spacing: 3px;
+ background: none;
+ border: 1px solid #03e9f4;
+}
+
+button:hover {
+ background: #03e9f4;
+ color: #050801;
+ box-shadow: 0 0 5px #03e9f4,
+              0 0 20px #03e9f4,
+              0 0 20px #03e9f4,
+              0 0 20px #03e9f4;
+ transform: rotate(360deg);
+}
