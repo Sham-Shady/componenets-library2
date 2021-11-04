@@ -11,11 +11,19 @@
     <h1>Components Library</h1>
     <div class="nav1">
     <h2>Navigation Bar 1</h2>
-    <nav class="a1">
-      <a href="#" target="_blank">Link1</a>
-      <a href="#" target="_blank">Link2</a>
-      <a href="#" target="_blank">Link3</a>
-    </nav>
+    <nav role="navigation">
+  <ul>
+    <li><a href="#">One</a></li>
+    <li><a href="#">Two</a>
+      <ul class="dropdown">
+        <li><a href="#">Sub-1</a></li>
+        <li><a href="#">Sub-2</a></li>
+        <li><a href="#">Sub-3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Three</a></li>
+  </ul>
+</nav>
     </div>
     <div class="nav2">
     <h2>Navigation Bar 2</h2>
@@ -58,12 +66,8 @@
   <div class="text-container">
     <h3>A blue bird</h3>
     <div>
-      This a demo experiment to skew image container. It looks good.
+      Picture of a blue bird
   </div>
 </div>
-
-
-
-
   </body>
 </html>
